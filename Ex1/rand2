@@ -1,0 +1,18 @@
+from random import randint
+def rand2(A, B):
+    """ (int, int)-> str
+    returns an even number by random.
+    which is located betwen A and B. Ex)
+    >>>input: 5, 55
+    output:your random number is ready:38 """
+    while True:
+       r=randint(A, B)
+       if r%2!=0:
+           continue
+       return "your random number is ready:{}".format(r)
+
+   
+    
+A=int(input("Enter your first number:"))
+B=int(input("Enter your second number:"))
+print(rand2(A, B))
