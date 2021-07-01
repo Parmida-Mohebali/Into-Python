@@ -12,6 +12,6 @@ def prog4(a):
         if(a%i)==0:
             dlist.append(i)
             dlist.sort()
-    return 'Divisors of a are:', dlist
+    return 'Divisors of a are:{}'.format(dlist)
 
 print(prog4(int(input("Enter a:"))))
