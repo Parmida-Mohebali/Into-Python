@@ -8,7 +8,7 @@ def func2(str):
     ex)input:12.45
     output:12.45"""
     numlist=[]
-    if type(str) is '':
+    if type(str) == type(""):
         for i in range(1,len(str)-1):
             numlist.append(str[i])
         return (''.join(numlist))
